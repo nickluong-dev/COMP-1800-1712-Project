@@ -1,0 +1,48 @@
+body {
+	background-image: url("../images/vancouver_image.png"); /* this needs to be replaced because i stole the image */
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+a {
+	color: #603AD1;
+}
+
+#page-title {
+    color : #603AD1; font-size: 64pt; font-style:
+}
+
+#primarycontent {
+	max-width: 1500px;
+	margin: 50px auto;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+
+#contentpadding {
+	padding: 50px;
+}
+
+.container {
+    
+}
+
+.underlinehr {
+	width: 30%;
+}
+
+.justifiedtext {
+	text-align: justify;
+}
+
+.mpheader {
+	color: white;
+	text-align: center;
+}
+
+.mptextcontainer {
+	width: 90%;
+	margin: 0 auto;
+}
