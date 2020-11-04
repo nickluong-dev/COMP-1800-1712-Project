@@ -9,7 +9,7 @@ a {
 	color: #603AD1;
 }
 
-#primarycontent {
+#primary-content {
 	max-width: 1000px;
 	margin: 50px auto;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
@@ -17,24 +17,24 @@ a {
 	border-radius: 3px;
 }
 
-#contentpadding {
+#content-padding {
 	padding: 50px;
 }
 
-.underlinehr {
+.underline-hr {
 	width: 30%;
 }
 
-.justifiedtext {
+.justified-text {
 	text-align: justify;
 }
 
-.mpheader {
+.mp-header {
 	color: white;
 	text-align: center;
 }
 
-.mptextcontainer {
+.mp-text-container {
 	width: 90%;
 	margin: 0 auto;
 }
