@@ -1,0 +1,57 @@
+body {
+	background-image: url("../images/vancouver_image.png"); /* this needs to be replaced because i stole the image */
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+#primary-content {
+	max-width: 500px;
+	margin: 50px auto;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+
+.header {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.form_headers {
+    color: #603AD1;
+    text-align: right;
+}
+
+#acc_reset {
+    font-size: 9px;
+    text-align: right;
+}
+
+#signin_btn {
+    background-color: #603AD1; 
+    border-color: #603AD1;
+}
+
+.signin_input {
+    margin-top: 10px;
+}
+
+#box {
+    font-size: 10px;
+    margin-top: 5px;
+    float: left;
+}
+
+#forgot_acc {
+    font-size: 10px;
+    text-align: right;
+    margin-top: 5px;
+    float: right;
+}
+
+#login_form {
+    margin: auto auto;
+    color:white;    
+}

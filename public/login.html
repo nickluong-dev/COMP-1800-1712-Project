@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/login.css">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Survey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Map</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+		<div id="primary-content">
+			<div class="container" style="background-color: #161616; border-radius: 3px;">
+				<div id="content-padding">
+					<div class="row">
+						<div class="col">
+                            <h2 class="header">Logo - CompCampus</h2>
+							<hr style="margin: 15px 0px 0px 0px; border-color: #161616;">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="dropdown">
+                        <div class="row">
+                            <div id="login_form">
+
+                                <a href="#" class="form_headers" data-toggle="collapse" data-target="#signin">Sign In</a>
+                                <span>or</span>
+                                <a href="#" class="form_headers" data-toggle="collapse" data-target="#createaccount">Create an Account</a>
+
+                                <div id="signin" class="collapse show" data-parent="#dropdown">
+                                    <form>
+                                        <div class="form-group signin_input">
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div>
+                                        <button href="#" id="signin_btn" class="btn btn-primary btn-block">Log In</button>
+                                        </div>
+                                        <div class="form-check" id="box">
+                                        <input type="checkbox" class="form-check-input" id="remember_user">
+                                        <label class="form-check-label" for="remember_user">Remember me</label>
+                                        </div>
+                                        <a href="#" id="forgot_acc">Forgot usename/password?</a>
+                                        <hr style="margin: 15px 0px 15px 0px; border-color: #161616;">
+                                    </form>
+                                </div>
+
+                                <div id="createaccount" class="collapse" data-parent="#dropdown">
+                                    <form>
+                                        <div class="form-group signin_input">
+                                        <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div>
+                                        <button href="#" id="signin_btn" class="btn btn-primary btn-block">Sign Up</button>
+                                        <hr style="margin: 15px 0px 15px 0px; border-color: #161616;">
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.collapse').on('hidden.bs.collapse', function () {
+                $('.collapse').eq(1).collapse('show');
+            })
+        </script>
+    </body>
+</html>
