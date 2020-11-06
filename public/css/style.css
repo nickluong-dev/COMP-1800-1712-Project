@@ -35,7 +35,7 @@ body {
   height: auto;
 }
 .fixed{
-  background-image: url('../img/1800MapBackground.jpg');
+  background-image: url('../images/1800MapBackground.jpg');
 }
 .fixed-background{
   padding:5rem 0;
