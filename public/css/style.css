@@ -53,8 +53,16 @@ body {
 #buttonBoi{
   padding: 1.5rem;
   font-size: 2rem;
+  background-color: #1a4c6d;
 }
 
+#buttonBoi:hover{
+  background-color: gray;
+}
+
+#ubcPic{
+  text-align: center;
+}
 
 footer{
   background-color:#e0e0e0;
@@ -70,14 +78,14 @@ ul.social{
   list-style-type: none;
   display: flex;
   max-width: 16rem;
-  margin: 0 auto;
 }
 ul.social li{
-  margin: 0 auto;
+  margin-left: 25%;
+  margin-right: auto;
 }
 footer .svg-inline--fa{
   font-size: 2.3rem;
-  color: rgb(63, 123, 214);
+  color: #1a4c6d;
 }
 footer .svg-inline--fa:hover{
   color: whitesmoke;
