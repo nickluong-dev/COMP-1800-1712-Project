@@ -1,14 +1,31 @@
 body {
-	background-image: url("../images/vancouver_image.png"); /* this needs to be replaced because i stole the image */
+    background-image: url("../images/vancouver_image.png"); /* this needs to be replaced because i stole the image */
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(217, 228, 248);
 	background-repeat: no-repeat;
 	background-position: center;
-	color: white;
+    color: white;
 }
 
 .navbar-brand img{
     height: 4rem;
   }
-  
+.navbar{
+    font-size: 1rem;
+    font-weight: 1rem;
+  }
+.nav-item{
+    padding: 0.5rem;
+  }
+.nav-link{
+    color: #5b5555!important;
+  }
+.nav-link.active,
+.nav-link:hover{
+    color: #998c8c!important;
+  }
+
 #primary-content {
 	max-width: 500px;
 	margin: 50px auto;
