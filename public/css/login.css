@@ -5,6 +5,10 @@ body {
 	color: white;
 }
 
+.navbar-brand img{
+    height: 4rem;
+  }
+  
 #primary-content {
 	max-width: 500px;
 	margin: 50px auto;

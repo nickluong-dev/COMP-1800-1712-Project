@@ -5,12 +5,11 @@ body {
   background-color: rgb(217, 228, 248);
 }
 .navbar-brand img{
-  height: 5rem;
+  height: 4rem;
 }
 .navbar{
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  font-weight: 1rem;
 }
 .nav-item{
   padding: 0.5rem;
@@ -20,7 +19,7 @@ body {
 }
 .nav-link.active,
 .nav-link:hover{
-  color: lightblue!important;
+  color: #998c8c!important;
 }
 
 .mapFrame{
