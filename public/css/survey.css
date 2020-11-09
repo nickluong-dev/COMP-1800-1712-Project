@@ -39,5 +39,41 @@ a {
 	margin: 0 auto;
 }
 
+.radioContainer{
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 30px;
+    padding-right: 30px;
 
+}
 
+.radioContainer input{
+    display:none;
+}
+
+.circle{
+    width: 1.25em;
+    height: 1.25em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: #161616;
+    box-sizing: border-box;
+    border: 2px solid white;
+
+}
+
+.radioContainer:hover .circle{
+    background-color: #603AD1;
+    box-shadow: 0 0 20px #603AD1;
+}
+
+@keyframes check { 6%, 17.5% { font-size: 0; } }
+.radioContainer input:checked + .circle{
+    background-color: #603AD1;
+    animation: check 1s cubic-bezier(.17, .89, .32, 1.49);
+    box-shadow: 0 0 10px #603AD1, 0 0 30px #603AD1;
+}
