@@ -75,5 +75,5 @@ a {
 .radioContainer input:checked + .circle{
     background-color: #603AD1;
     animation: check 1s cubic-bezier(.17, .89, .32, 1.49);
-    box-shadow: 0 0 10px #603AD1, 0 0 30px #603AD1;
+    box-shadow: 0 0 20px #7054c2;
 }
