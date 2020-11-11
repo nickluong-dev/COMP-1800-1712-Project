@@ -7,8 +7,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     </head>
 
     <nav class="navbar bg-light navbar-light navbar-expand-lg">
@@ -55,10 +53,10 @@
                                 <div id="signin" class="collapse show" data-parent="#dropdown">
                                     <form>
                                         <div class="form-group signin_input">
-                                        <input type="email" id="email" class="form-control" placeholder="Enter email">
+                                        <input type="email" id="email_signin" class="form-control" placeholder="Enter email">
                                         </div>
                                         <div class="form-group">
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <input type="password" class="form-control" id="password_signin" placeholder="Password">
                                         </div>
                                         <div>
                                         <button onclick="logIn()" id="signin_btn" class="btn btn-primary btn-block">Log In</button>
@@ -76,10 +74,10 @@
                                     <form>
                                     
                                         <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <input type="email" class="form-control" id="email_signup" placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
+                                            <input type="password" class="form-control" id="password_signup" placeholder="Password">
                                         </div>
                                         <div>
                                         <button onclick="signUp()" id="signup_btn" class="btn btn-primary btn-block">Sign Up</button>
@@ -102,7 +100,6 @@
         </script>
 
         <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-        <script src="js/firebase_login.js"></script>
         <script>
         var firebaseConfig = {
             apiKey: "AIzaSyD_cBIiwDLdQlY6DRmGarXgsr1VkNXuRmg",
@@ -117,5 +114,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         </script>
+        <script src="js/firebase_login.js"></script>
+        
     </body>
 </html>
