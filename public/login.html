@@ -53,13 +53,13 @@
                                 <div id="signin" class="collapse show" data-parent="#dropdown">
                                     <form>
                                         <div class="form-group signin_input">
-                                        <input type="email" class="form-control" placeholder="Enter email">
+                                        <input type="email" id="email_signin" class="form-control" placeholder="Enter email">
                                         </div>
                                         <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password">
+                                        <input type="password" class="form-control" id="password_signin" placeholder="Password">
                                         </div>
                                         <div>
-                                        <button href="#" id="signin_btn" class="btn btn-primary btn-block">Log In</button>
+                                        <button onclick="logIn()" id="signin_btn" class="btn btn-primary btn-block">Log In</button>
                                         </div>
                                         <div class="form-check" id="box">
                                         <input type="checkbox" class="form-check-input" id="remember_user">
@@ -72,17 +72,15 @@
 
                                 <div id="createaccount" class="collapse" data-parent="#dropdown">
                                     <form>
-                                        <div class="form-group signin_input">
-                                        <input type="text" class="form-control" placeholder="Username">
+                                    
+                                        <div class="form-group">
+                                        <input type="email" class="form-control" id="email_signup" placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="password" class="form-control" id="password_signup" placeholder="Password">
                                         </div>
                                         <div>
-                                        <button href="#" id="signin_btn" class="btn btn-primary btn-block">Sign Up</button>
+                                        <button onclick="signUp()" id="signup_btn" class="btn btn-primary btn-block">Sign Up</button>
                                         <hr style="margin: 15px 0px 15px 0px; border-color: #161616;">
                                         </div>
                                     </form>
@@ -100,5 +98,23 @@
                 $('.collapse').eq(1).collapse('show');
             })
         </script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyD_cBIiwDLdQlY6DRmGarXgsr1VkNXuRmg",
+            authDomain: "comp-1800-and-1712-project.firebaseapp.com",
+            databaseURL: "https://comp-1800-and-1712-project.firebaseio.com",
+            projectId: "comp-1800-and-1712-project",
+            storageBucket: "comp-1800-and-1712-project.appspot.com",
+            messagingSenderId: "1058015530046",
+            appId: "1:1058015530046:web:eeb255c672a0fd4bee556f",
+            measurementId: "G-KDB9JM7YD9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="js/firebase_login.js"></script>
+        
     </body>
 </html>
