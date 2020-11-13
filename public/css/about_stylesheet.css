@@ -14,7 +14,30 @@
     text-align: center;
 }
 
+#about-console {
+    background-color: black;
+    color: white;
+    font-family: Consola, monospace;
+    padding: 10px;
+    border-radius: 3px;
+    white-space: pre-line;
+    height: 350px;
+}
+
 h2 {
     margin-top: 15px;
     font-size: 20pt;
+}
+
+.person-button {
+    padding: 0 10px 0 0px;
+    color: white;
+}
+
+.person-button:hover {
+    color: white;
+}
+
+#about-area {
+    padding-top: 20px;
 }
